@@ -1,0 +1,27 @@
+{
+  "Title": "EXPLORE GEORGIA",
+  "PeopleTTL": "People and Culture",
+  "HistoryTTL": "History and Nature",
+  "description": {
+    "line1": "Georgian culture is an exotic, mysterious and ancient culture stretching back for millennia. Georgian culture is world renowned for being accommodating and tolerant. Traditionally, Georgian people consider guests to be a gift from god and their welcoming amiability is immediatelyapparent upon a traveler’s arrival.",
+    "line2": " Georgia opposed many conquerors and experienced many defeats, but always managed to get back on its feet. Georgia has given , polyphonic singing, amazing dances, wine and other wonders of human development. The nature of Georgia offers an incredible variety of landscapes, flora and fauna.",
+    "middleLine": " Geo Trails - We offer unique and personalized tours where you can choose a travel direction that best suits your interests and desires. Join us and find yourself on the verge of new discoveries!"
+  },
+  "aboutus": {
+    "group1": {
+      "pargh": "Detailed map of Georgia.",
+      "descr": "Using this map, you can plan your tours and we will help you implement them."
+    },
+    "group2": {
+      "pargh": "Georgia is unique",
+      "descr": "Georgia is unique both in its hospitality and its climate, which you will soon be convinced of yourself."
+    },
+    "group3": {
+      "pargh": "Our service",
+      "descr": "The tour will be conducted in this model of car, which is fully equipped to ensure your pleasant and comfortable journey"
+    },
+    "group4": {
+      "pargh": "Our Social Medias"
+    }
+  }
+}
