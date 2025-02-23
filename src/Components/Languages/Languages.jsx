@@ -34,7 +34,7 @@ export default function App() {
         onClick={toggleLanguages}
         className="group w-8 hover:scale-125 duration-200 hover:text-blue-500 relative"
       >
-        <ion-icon name="globe-sharp" className="text-7xl"></ion-icon>
+        <ion-icon name="globe-sharp" className="text-8xl"></ion-icon>
         <span
           className="absolute -top-14 left-[50%] -translate-x-[50%] 
               z-20 origin-left scale-0 px-3 py-2 text-sm font-bold
