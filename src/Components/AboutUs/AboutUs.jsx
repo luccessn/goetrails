@@ -44,7 +44,7 @@ export function Aboutus() {
       skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
       button: (
-        <div className="group relative inline-block">
+        <div className="group relative inline-block flex flex-row gap-5">
           <button className="focus:outline-none">
             <svg
               viewBox="0 0 16 16"
@@ -61,6 +61,7 @@ export function Aboutus() {
           <span className="absolute -top-14 left-1/2 transform -translate-x-1/2 z-20 px-4 py-2 text-sm font-bold text-white bg-gray-900 rounded-lg shadow-lg transition-transform duration-300 ease-in-out scale-0 group-hover:scale-100">
             Instagram
           </span>
+          <h1> Follow For More</h1>
         </div>
       ), // Add button here
     },

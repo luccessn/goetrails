@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import InfiniteMenu from "../seccomp/InfiniteMenu";
-import AnimatedContent from "../seccomp/AnimatedContent";
+import FadeContent from "../seccomp/FadeContent ";
+// import AnimatedContent from "../seccomp/AnimatedContent";
 const items = [
   {
     image:
@@ -42,40 +43,28 @@ const items = [
   },
 ];
 const Middle = () => {
-  const [isScrolled, setisScrolled] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      const responsiveThreshold = window.innerHeight * 0.1;
-      if (window.scrollY > responsiveThreshold) {
-        setisScrolled(true);
-      } else {
-        setisScrolled(false);
-      }
-    };
+  // const [isScrolled, setisScrolled] = useState(false);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const responsiveThreshold = window.innerHeight * 0.1;
+  //     if (window.scrollY > responsiveThreshold) {
+  //       setisScrolled(true);
+  //     } else {
+  //       setisScrolled(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   return (
     <>
-      {isScrolled && (
-        <AnimatedContent
-          distance={350}
-          reverse={false}
-          config={{ tension: 60, friction: 30 }}
-          initialOpacity={0.2}
-          animateOpacity
-          scale={1.1}
-          threshold={0.2}
-        >
-          <div style={{ height: "800px", position: "relative" }} className="">
-            <InfiniteMenu items={items} />
-          </div>
-        </AnimatedContent>
-      )}
+      <div style={{ height: "800px", position: "relative" }} className="">
+        <InfiniteMenu items={items} />
+      </div>
     </>
   );
 };
