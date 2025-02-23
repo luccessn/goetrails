@@ -26,15 +26,19 @@ const Header = () => {
   return (
     <div>
       <div className="relative h-[850px]   w-full duration-500 hover:scale-105 z-10">
-        <GridDistortion
-          imageSrc="https://www.muchbetteradventures.com/magazine/content/images/size/w1600/2024/08/Alti-Hut-with-the-view-of-Mount-Kazbeg-in-Caucasus--Georgia.-There-slopes-are-barren-and-stony-below-the-snow-capped-peak-and-the-Gergeti-Glacier..jpg"
+        {/* <GridDistortion
+          imageSrc=""
           grid={10}
           mouse={0.2}
           strength={0.15}
           relaxation={0.9}
           className=" object-cover transition-transform  "
+        /> */}
+        <img
+          src="https://www.muchbetteradventures.com/magazine/content/images/size/w1600/2024/08/Alti-Hut-with-the-view-of-Mount-Kazbeg-in-Caucasus--Georgia.-There-slopes-are-barren-and-stony-below-the-snow-capped-peak-and-the-Gergeti-Glacier..jpg"
+          alt=""
+          className="object-cover transition-transform w-full h-[850px] "
         />
-
         <div className="top-shadow absolute left-0 top-0 w-full h-[180px] bg-gradient-to-b from-black to-transparent"></div>
         <div className="bottom-shadow absolute left-0 -bottom-1 w-full h-[180px] bg-gradient-to-t from-black to-transparent "></div>
       </div>

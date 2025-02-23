@@ -44,7 +44,7 @@ export function Aboutus() {
       skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
       button: (
-        <div className="group relative inline-block flex flex-row gap-5">
+        <div className="group relative  flex flex-row gap-5">
           <button className="focus:outline-none">
             <svg
               viewBox="0 0 16 16"
