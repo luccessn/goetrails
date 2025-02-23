@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import imglogo from "../../Images/logo2.svg";
-import GridDistortion from "../seccomp/GridDistortion";
 import Globus from "../Globus/Globus";
 import "../../App.css";
 import AnimatedContent from "../seccomp/AnimatedContent";
