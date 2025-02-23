@@ -6,7 +6,6 @@ import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
 export function Aboutus() {
   const { t } = useTranslation();
