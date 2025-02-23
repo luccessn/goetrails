@@ -1,6 +1,5 @@
 import React from "react";
 import InfiniteMenu from "../seccomp/InfiniteMenu";
-// import AnimatedContent from "../seccomp/AnimatedContent";
 const items = [
   {
     image:
@@ -42,23 +41,6 @@ const items = [
   },
 ];
 const Middle = () => {
-  // const [isScrolled, setisScrolled] = useState(false);
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const responsiveThreshold = window.innerHeight * 0.1;
-  //     if (window.scrollY > responsiveThreshold) {
-  //       setisScrolled(true);
-  //     } else {
-  //       setisScrolled(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
   return (
     <>
       <div style={{ height: "800px", position: "relative" }} className="">
