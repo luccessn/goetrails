@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 export function Aboutus() {
   const { t } = useTranslation();
-  const { group1, group2, group3, group4 } = t("aboutus");
+  const { titleus, group1, group2, group3, group4 } = t("aboutus");
   const features = [
     {
       title: group1.pargh,
@@ -41,7 +41,7 @@ export function Aboutus() {
     <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto  ">
       <div className="px-8">
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center   text-white font-semibold tracking-[18px] dark:text-white">
-          Everything About Us
+          {titleus}
         </h4>
       </div>
       <div className="relative ">

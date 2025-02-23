@@ -68,8 +68,8 @@ const Middle = () => {
           config={{ tension: 60, friction: 30 }}
           initialOpacity={0.2}
           animateOpacity
-          scale={2}
-          threshold={0.1}
+          scale={1.1}
+          threshold={0.2}
         >
           <div style={{ height: "800px", position: "relative" }} className="">
             <InfiniteMenu items={items} />

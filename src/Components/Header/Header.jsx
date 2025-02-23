@@ -5,7 +5,6 @@ import Globus from "../Globus/Globus";
 import "../../App.css";
 import AnimatedContent from "../seccomp/AnimatedContent";
 import TextPressure from "../seccomp/TextPressure";
-import SplitText from "../seccomp/SplitText";
 import { useTranslation } from "react-i18next";
 import Languages from "../Languages/Languages.jsx";
 const Header = () => {
@@ -69,8 +68,7 @@ const Header = () => {
           {isScrolled && (
             <div className="flex flex-row justify-between w-full p-10 relative -top-[50em] content-center items-center text-center ">
               <AnimatedContent
-                direction="horizontal"
-                distance={-350}
+                distance={350}
                 reverse={false}
                 config={{ tension: 40, friction: 30 }}
                 initialOpacity={0.2}
@@ -78,44 +76,16 @@ const Header = () => {
                 scale={1.1}
                 threshold={0.2}
               >
-                <div className="flex flex-col gap-2   ">
-                  <SplitText
-                    text={t("PeopleTTL")}
-                    delay={110}
-                    animationFrom={{
-                      opacity: 0,
-                      transform: "translate3d(0,50px,0)",
-                    }}
-                    animationTo={{
-                      opacity: 1,
-                      transform: "translate3d(0,0,0)",
-                    }}
-                    easing="easeOutCubic"
-                    threshold={0.2}
-                    rootMargin="-50px"
-                    className=" text-2xl smm:text-4xl md:text-5xl bg-gradient-to-r from-orange-400  to-sky-100 bg-clip-text text-transparent"
-                  />
-
-                  <SplitText
-                    text={line1}
-                    delay={50}
-                    animationFrom={{
-                      opacity: 0,
-                      transform: "translate3d(0,50px,0)",
-                    }}
-                    animationTo={{
-                      opacity: 1,
-                      transform: "translate3d(0,0,0)",
-                    }}
-                    easing="easeOutCubic"
-                    threshold={0.2}
-                    rootMargin="-50px"
-                    className=" w-[250px] lg:w-[400px] xl:w-[500px] text-center text-sm md:text-md bg-gradient-to-r from-orange-300 via-white to-sky-100 bg-clip-text text-transparent "
-                  />
+                <div className="flex flex-col gap-2">
+                  <h1 className=" p-2 text-2xl smm:text-4xl md:text-5xl bg-gradient-to-r from-orange-400  to-sky-100 bg-clip-text text-transparent">
+                    {t("PeopleTTL")}
+                  </h1>
+                  <p className=" w-[250px] lg:w-[400px] xl:w-[500px] text-center text-sm md:text-md bg-gradient-to-r from-orange-300 via-white to-sky-100 bg-clip-text text-transparent ">
+                    {line1}
+                  </p>
                 </div>
               </AnimatedContent>
               <AnimatedContent
-                direction="horizontal"
                 distance={350}
                 reverse={false}
                 config={{ tension: 40, friction: 30 }}
@@ -125,39 +95,12 @@ const Header = () => {
                 threshold={0.2}
               >
                 <div className="flex flex-col gap-2 relative -left-[10em] ssm:-left-[2em] smm:left-0 top-[30em] xl:top-0  ">
-                  <SplitText
-                    text={t("HistoryTTL")}
-                    delay={110}
-                    animationFrom={{
-                      opacity: 0,
-                      transform: "translate3d(0,50px,0)",
-                    }}
-                    animationTo={{
-                      opacity: 1,
-                      transform: "translate3d(0,0,0)",
-                    }}
-                    easing="easeOutCubic"
-                    threshold={0.2}
-                    rootMargin="-50px"
-                    className=" text-2xl smm:text-4xl md:text-5xl bg-gradient-to-r from-sky-300 via-white to-sky-300 bg-clip-text text-transparent "
-                  />
-
-                  <SplitText
-                    text={line2}
-                    delay={50}
-                    animationFrom={{
-                      opacity: 0,
-                      transform: "translate3d(0,50px,0)",
-                    }}
-                    animationTo={{
-                      opacity: 1,
-                      transform: "translate3d(0,0,0)",
-                    }}
-                    easing="easeOutCubic"
-                    threshold={0.2}
-                    rootMargin="-50px"
-                    className=" w-[200px]  lg:w-[400px] xl:w-[500px] text-[12px] smm:text-sm md:text-md bg-gradient-to-r from-sky-300 via-white to-sky-300 bg-clip-text text-transparent"
-                  />
+                  <h1 className=" p-2 text-2xl smm:text-4xl md:text-5xl bg-gradient-to-r from-sky-300 via-white to-sky-300 bg-clip-text text-transparent ">
+                    {t("HistoryTTL")}
+                  </h1>
+                  <p className=" w-[200px]  lg:w-[400px] xl:w-[500px] text-[12px] smm:text-sm md:text-md bg-gradient-to-r from-sky-300 via-white to-sky-300 bg-clip-text text-transparent">
+                    {line2}{" "}
+                  </p>
                 </div>
               </AnimatedContent>
             </div>

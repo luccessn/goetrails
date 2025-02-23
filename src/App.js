@@ -9,7 +9,7 @@ function App() {
       <Header />
 
       <Middle />
-      <div className="relative -top-[50em]">
+      <div className="relative -top-[30em] md:-top-[40em] xl:-top-[50em]  xxl:-top-[55em] xxxl:-top-[70em]">
         <Aboutus />
       </div>
     </div>
