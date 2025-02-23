@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import InfiniteMenu from "../seccomp/InfiniteMenu";
-import FadeContent from "../seccomp/FadeContent ";
 // import AnimatedContent from "../seccomp/AnimatedContent";
 const items = [
   {
