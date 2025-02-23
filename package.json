@@ -37,7 +37,8 @@
     "tailwindcss": "^3.4.17",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.173.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "postcss": "^8.4.49"
   },
   "scripts": {
     "start": "react-scripts start",
